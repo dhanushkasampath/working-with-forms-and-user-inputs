@@ -16,7 +16,8 @@ const SimpleInput = (props) => {
     const formSubmissionHandler = event => {
         event.preventDefault();//this is to prevent reloading
 
-        setEnteredNameTouched(true);
+        setEnteredNameTouched(true);//this need to turn to true once the submit button is clicked. as we assume all
+        // fields are touched
 
         if(enteredName === ''){
             setEnteredNameIsValid(false);

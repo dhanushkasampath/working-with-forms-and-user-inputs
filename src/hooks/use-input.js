@@ -1,7 +1,7 @@
 import {useState} from "react";
 
 //this is a custom hook
-const useInput = (validateValue) => {
+const useInput = (validateValue) => {//here "validateValue" is a function
     const[enteredValue, setEnteredValue] = useState('');
     const[isTouched, setIsTouched] = useState(false);
 
